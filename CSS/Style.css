@@ -1,0 +1,35 @@
+body{
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: #2d3436;
+}
+img{
+	max-width: 100%;
+}
+.slider__wrapper{
+	padding: 10px 15px;
+	max-width: 1240px;
+	margin: 0 auto;
+}
+.splide__arrow{
+	opacity: 1;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: #fbc531;
+
+}
+.splide__pagination{
+	bottom: -2rem;
+}
+
+.slider__wrapper .splide__pagination__page.is-active{
+	opacity: 1;
+	background-color: #fbc531;
+}
+
+@media screen and (min-width:640px){
+	.slider__wrapper .splide{
+		padding: 0 4rem;
+	}
+}

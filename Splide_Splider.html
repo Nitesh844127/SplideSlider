@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="CSS/Style.CSS">
+</head>
+<body>
+<div class="container slider__wrapper">
+	<div class="splide">
+		<div class="splide__track">
+			<div class="splide__list">
+				<div class="splide__slide"><div class="img-box"><img src="Image/Img01.png"></div></div>
+				<div class="splide__slide"><div class="img-box"><img src="Image/Img02.png"></div></div>
+				<div class="splide__slide"><div class="img-box"><img src="Image/Img03.png"></div></div>
+				<div class="splide__slide"><div class="img-box"><img src="Image/Img12.png"></div></div>
+				<div class="splide__slide"><div class="img-box"><img src="Image/Img05.png"></div></div>
+				<div class="splide__slide"><div class="img-box"><img src="Image/Img06.png"></div></div>
+				<div class="splide__slide"><div class="img-box"><img src="Image/Img07.png"></div></div>
+				<div class="splide__slide"><div class="img-box"><img src="Image/Img08.png"></div></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	var splide = new Splide( '.splide', {
+  perPage: 4,
+  perMove:1,
+  gap    : '1.5rem',
+  padding:'3rem',
+  type: 'loop',
+  drag:'free',
+  snap:true,
+  pagination:true,
+  arrows:true,
+  autoplay:true,
+  interval:700,
+  speed:500,
+  breakpoints: {
+    640: {
+      perPage: 2,
+      gap    :'.7rem',
+      padding:'1.5rem',
+    },
+    480: {
+      perPage: 1,
+      gap    : '.7rem',
+      padding:'1.5rem',
+    },
+
+  },
+} );
+
+splide.mount();
+</script>
+</body>
+</html>
